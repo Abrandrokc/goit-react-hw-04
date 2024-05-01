@@ -7,8 +7,8 @@ export default function ImageCard({ item, onClick }) {
   };
 
   return (
-    <li onClick={handleClick} key={item.id} className={css.imageCard}>
-      <img src={item.urls.small} alt={item.description} className={css.img} />
+    <li  key={item.id} className={css.imageCard}>
+      <img onClick={handleClick} src={item.urls.small} alt={item.description} className={css.img} />
     </li>
   );
 }
